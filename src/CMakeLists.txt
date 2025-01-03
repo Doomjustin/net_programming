@@ -1,0 +1,5 @@
+if (WIN32)
+    add_subdirectory(windows)
+elseif (UNIX)
+    add_subdirectory(posix)
+endif()
