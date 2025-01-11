@@ -7,12 +7,10 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
 set(CMAKE_POSITION_INDEPENDENT_CODE TRUE)
-# set(BUILD_SHARED_LIBS true)
-# set(CMAKE_BUILD_TYPE Debug)
 
 list(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_LIST_DIR}/cmake)
 include(AddDependencies)
 include(NoInSourceBuild)
 
-add_subdirectory(src bin)
-add_subdirectory(test)
+add_subdirectory(src)
+add_subdirectory(unp)
